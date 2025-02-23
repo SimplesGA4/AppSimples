@@ -13,7 +13,6 @@ import gmail    from "./assets/icons/gmail.svg";
 
 // gifs 
 import curriculo from "./assets/gifs/curriculo.gif";
-import project   from "./assets/gifs/project.gif";
 
 export default function App() {
     return (
@@ -30,13 +29,13 @@ export default function App() {
                 
                 <div className="div_perfil_icons_redes">
                     <a href="https://www.instagram.com/carmomateussousado/" target="_blank">
-                        <img src={insta}    />
+                        <img src={insta}    alt="insta"/>
                     </a>
                     <a href="https://www.linkedin.com/in/mateus-sousa-do-carmo-737696268/" target="_blank">
-                        <img src={linkedin} />
+                        <img src={linkedin} alt="linkedin"/>
                     </a>
                     <a href="https://github.com/kaladabrio2020" target="_blank">
-                        <img src={github}   />    
+                        <img src={github}  alt="linkedin" />    
                     </a>
                 
                 </div>
@@ -60,9 +59,19 @@ export default function App() {
                 <hr style={{marginTop:"90px"}}></hr>
                 <div className="div_perfil_gifs">
                     <span>Currículo Vitae</span>
-                    <img src={curriculo}/>
+                    <img src={curriculo} alt="curriculo"/>
 
                 </div>
+            </div>
+
+            <div>
+                <div>
+                    <h2>Sobre mim</h2>
+                    <span/>Tenho 22 anos e estou cursando Ciência de Dados na Universidade Federal do Ceará. Meu principal objetivo é adquirir conhecimento e experiência na área, além de contribuir de forma significativa com o meu melhor esforço. 
+                    <span/>Gosto muito da área de Machine Learning e estudo copiosamente todos os dias para melhorar meu conhecimento sobre essa área, principalmente no que tange a Redes Neurais.
+         
+
+                 </div>
             </div>
 
         </div>
