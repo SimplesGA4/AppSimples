@@ -1,18 +1,18 @@
 import React from "react";
 import "./styles/App/App.css";
 // foto de perfil
-import perfil from "./assets/img/Perfil.png";
+import perfil from "/src/assets/img/Perfil.png";
 
 // icones
-import github   from "./assets/icons/github.svg";
-import insta    from "./assets/icons/insta.svg";
-import linkedin from "./assets/icons/linkdin.svg";
-import whatsapp from "./assets/icons/whatsapp.svg";
-import gmail    from "./assets/icons/gmail.svg";
+import github   from "/src/assets/icons/github.svg";
+import insta    from "/src/assets/icons/insta.svg";
+import linkedin from "/src/assets/icons/linkdin.svg";
+import whatsapp from "/src/assets/icons/whatsapp.svg";
+import gmail    from "/src/assets/icons/gmail.svg";
 
 
 // gifs 
-import curriculo from "./assets/gifs/curriculo.gif";
+import curriculo from "/src/assets/gifs/curriculo.gif";
 
 export default function App() {
     return (
