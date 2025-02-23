@@ -6,6 +6,7 @@ export default defineConfig({
   plugins: [react()],
   build: {
     rollupOptions: {
+      input: "src/index.html",
       external: [
         // Add the file to externalize it
         '/src/assets/img/Perfil.png',
