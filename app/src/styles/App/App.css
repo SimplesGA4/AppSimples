@@ -1,0 +1,102 @@
+/* No seu arquivo styles.css */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap');
+body{
+
+    background-image: url(https://images3.alphacoders.com/648/648465.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    font-family: 'Open Sans', sans-serif;
+}
+.div_main{
+    display: flex;
+}
+.div_perfil{
+    background-color: rgba(255, 255, 255, 0.421);
+    width          : 21.1%;
+    padding        : 25px;
+    margin-top     : 20px;
+    margin-left    : 5px;
+    border-radius  : 10px;
+    align-items    : center;
+}
+
+/* div_perfil_img: foto de perfil */
+.div_perfil_img{
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+/* div_perfil_img_style: foto de perfil estilo*/
+.div_perfil_img_style{
+    border-radius: 300px;
+    border-width: 10px;
+    border-color: black;
+    width: 115px;
+}
+/* div_perfil_nome: nome do perfil */
+.div_perfil_nome{
+    font-family: 'Open Sans';
+    font-weight: bold;
+    font-size  : 15pt;
+    text-align : center;
+    margin-top : 15px;
+}
+/* div_perfil_icons_redes: icones */
+.div_perfil_icons_redes{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.div_perfil_icons_redes img{
+    width: 40px;
+    height: 40px;
+    margin-left: 10px;
+    margin-top: 20px;
+}
+
+
+/* div_perfil_contatos: contatos */
+
+.div_perfil_contatos{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.div_perfil_contatos button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(255, 255, 255, 0.017);
+    padding: 5px;
+    border-radius: 10px;
+    border-width: 1px;
+    margin-top: 10px;
+}
+
+.div_perfil_contatos img{
+    width: 22px;
+    height: 22px;
+    margin-right: 10px;
+
+}
+
+/* div_perfil_gifs: gifs */
+.div_perfil_gifs{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.div_perfil_gifs span{
+    font-size: 11pt;
+}
+
+.div_perfil_gifs img{
+    margin-left: 10px;
+    width: 30px;
+    height: 30px;
+}
