@@ -1,7 +1,9 @@
 import React from "react";
+
 import "./styles/App/App.css";
+
 // foto de perfil
-import perfil from "/src/assets/img/Perfil.png";
+import perfil from "/src/assets/img/perfil.png";
 
 // icones
 import github   from "/src/assets/icons/github.svg";
