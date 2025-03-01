@@ -20,7 +20,11 @@ import cerfificado from "/src/assets/gifs/certificate.gif";
 
 // Tags && GA4
 import ReactGA from "react-ga4";
-import { GA_TRACKING_ID_TAG_DEFAULT } from "./tags/gatags";
+import TagManager from 'react-gtm-module';
+
+import { GA_TRACKING_ID_TAG_DEFAULT,
+        TM_TAG_DEFAULT
+ } from "./tags/gatags";
 
 
 
@@ -29,9 +33,13 @@ import { GA_TRACKING_ID_TAG_DEFAULT } from "./tags/gatags";
 export default function App() 
 {
     React.useEffect(() => {
+        // Initialize Google Analytics
         ReactGA.initialize(GA_TRACKING_ID_TAG_DEFAULT);
         ReactGA.send({ hitType: "pageview", page: "/" });
-        alert('enviado')
+
+        // Initialize Google Tag Manager
+        TagManager.initialize({ gtmId: TM_TAG_DEFAULT });
+        
       }, []);
 
 
