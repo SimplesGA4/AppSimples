@@ -31,6 +31,7 @@ export default function App()
     React.useEffect(() => {
         ReactGA.initialize(GA_TRACKING_ID_TAG_DEFAULT);
         ReactGA.send({ hitType: "pageview", page: "/" });
+        alert('enviado')
       }, []);
 
 
