@@ -15,6 +15,7 @@ import gmail    from "/src/assets/icons/gmail.svg";
 
 // gifs 
 import curriculo from "/src/assets/gifs/curriculo.gif";
+import cerfificado from "/src/assets/gifs/certificate.gif";
 
 export default function App() {
     return (
@@ -47,7 +48,7 @@ export default function App() {
                 <div className="div_perfil_contatos">     
                     <button>
                         <img src={whatsapp}   />
-                        <span>(11) 9 9999-9999</span>
+                        <span>(85) 9 8796-5879</span>
                     </button>
                     <button>
                         <img src={gmail}/>
@@ -59,21 +60,77 @@ export default function App() {
                     </button>
                 </div>
                 <hr style={{marginTop:"90px"}}></hr>
-                <div className="div_perfil_gifs">
-                    <span>Currículo Vitae</span>
-                    <img src={curriculo} alt="curriculo"/>
+                <a href="https://github.com/kaladabrio2020/kaladabrio2020/blob/main/vitae/Mateus%20Sousa%20do%20Carmo%20-%20vitae.pdf" className="a_curriculo" target="_blank">
+                    <div className="div_perfil_gifs">
+                        <span>Currículo Vitae</span>
+                        <img src={curriculo} alt="curriculo"/>
+                    </div>
+                </a>
+                <hr></hr>
+                <a href="https://github.com/kaladabrio2020/ecommerce-brazil-dashboard-bi" className="a_curriculo" target="_blank">
+                    <div className="div_perfil_gifs">
+                        <span>Certificações</span>
+                        <img src={cerfificado} alt="cerfificado"/>
+                    </div>
+                </a>
 
-                </div>
             </div>
 
-            <div>
+            <div className="div_portfolio">
                 <div>
                     <h2>Sobre mim</h2>
-                    <span/>Tenho 22 anos e estou cursando Ciência de Dados na Universidade Federal do Ceará. Meu principal objetivo é adquirir conhecimento e experiência na área, além de contribuir de forma significativa com o meu melhor esforço. 
-                    <span/>Gosto muito da área de Machine Learning e estudo copiosamente todos os dias para melhorar meu conhecimento sobre essa área, principalmente no que tange a Redes Neurais.
-         
-
+                    <span>Tenho 22 anos e sou estudante de Ciência de Dados na Universidade Federal do Ceará. Meu principal objetivo é adquirir conhecimento e experiência na área, além de contribuir de forma significativa com dedicação e excelência. Tenho grande interesse em Machine Learning, especialmente em Redes Neurais, e estudo intensamente todos os dias para aprimorar meu entendimento e habilidades nesse campo.</span>
                  </div>
+                 <div>
+                    <h2>Hard Skills</h2>
+                    <li><b>Analise de Dados:</b> Python, R, SQL, Pyspark, Pandas</li><li><b>Visualização de dados:</b> Power BI, Plotly, Dash, Matplotlib, Seaborn</li><li><b>Front End:</b> HTML, JS, TS, React</li><li><b>Banco de dados:</b> Postgres, SQL server</li>
+                    <li><b>Machine Learning:</b> Keras, Torch, Tensorflow, Stastsmodels, Sklearn</li>
+                 </div>
+                 <div>
+                    <h2>Projetos</h2>
+                    <div className="div_projetos_main_1">
+                        <div className="div_projeto">
+                            <a href="https://github.com/kaladabrio2020/MachineLearning" target="_blank" className="a_projeto1">
+                                <div className="div_projeto1_text">
+                                    <h4>Machine Learning</h4>
+                                    <p>Pegando vários dataset e criando modelos de predição</p>
+                                </div>
+                            </a>
+                        </div>
+                        <div>
+                            <div className="div_projeto">
+                                <a href="https://github.com/kaladabrio2020/MachineLearning" target="_blank" className="a_projeto1">
+                                    <div className="div_projeto1_text">
+                                        <h4>Dashboard Ecommerce</h4>
+                                        <p>Criando uma Dashboard Ecommerce Brasil via Dash + Plotly </p>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div className="div_projetos_main_2">
+                        <div className="div_projeto">
+                            <a href="https://github.com/kaladabrio2020/Programa.Bolsa.Compass.Uol.CienciaDeDados" target="_blank" className="a_projeto1">
+                                <div className="div_projeto1_text">
+                                    <h4>Compass Uol Ciencia De Dados </h4>
+                                    <p>Projetos da bolsa Compass.Uol que possibilitou minha Certificação em AWS Cloud Practioner</p>
+                                </div>
+                            </a>
+                        </div>
+                        <div>
+                            <div className="div_projeto">
+                                <a href="https://github.com/kaladabrio2020/TimesSeriesLivroOR" target="_blank" className="a_projeto1">
+                                    <div className="div_projeto1_text">
+                                        <h4>Séries Temporais</h4>
+                                        <p>Todo o meu progresso nos estudos sobre Séries Temporais</p>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
 
         </div>

@@ -14,11 +14,13 @@ body{
 .div_perfil{
     background-color: rgba(255, 255, 255, 0.421);
     width          : 21.1%;
+    height: 540px;
     padding        : 25px;
-    margin-top     : 20px;
+    margin-top     : 50px;
     margin-left    : 5px;
     border-radius  : 10px;
     align-items    : center;
+
 }
 
 /* div_perfil_img: foto de perfil */
@@ -72,8 +74,13 @@ body{
     justify-content: center;
     background-color: rgba(255, 255, 255, 0.017);
     padding: 5px;
-    border-radius: 10px;
-    border-width: 1px;
+    padding-left: 5px;
+    padding-right: 5px;
+    border-radius: 8px;
+    border-width: 0.1px;
+    
+    border-color: black;
+    border-style: solid;
     margin-top: 10px;
 }
 
@@ -99,4 +106,65 @@ body{
     margin-left: 10px;
     width: 30px;
     height: 30px;
+}
+
+.a_curriculo{
+    text-decoration: none;
+    color: black;
+}
+/*div_portfolio: portfolio*/
+.div_portfolio{
+    font-family: 'Open Sans';
+
+    background-color: rgba(255, 255, 255, 0.421);    
+    padding: 20px;
+    height: 620px;
+    width: 70%;
+    margin-top: 25px;
+    margin-left: 25px;
+    border-radius: 10px;
+}
+
+.div_portfolio span{
+    font-size: 12pt;
+    margin-left: 30px;
+    margin-right: 0px;
+    text-align: justify;
+}
+
+.div_projetos_main_1{
+    display: flex;
+}
+
+.a_projeto1{
+    text-decoration: none;
+    color: black;
+}
+.div_projeto{
+    width: 450px;
+    background-color: rgba(189, 189, 189, 0.395);
+    border: 1px solid rgba(0, 0, 0, 0.68);
+    border-radius: 10px;
+    margin-left: 5px;  
+}
+
+.div_projeto1_text{
+    padding: 10px;
+    text-align: justify;
+}
+.div_projeto1_text h4{
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+.div_projeto1_text p{
+    margin-top: 5px;
+    margin-left: 10px;
+    font-size: 10pt;
+    font-weight: lighter;
+}
+
+
+.div_projetos_main_2{
+    display: flex;
+    margin-top: 20px;
 }
