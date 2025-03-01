@@ -17,7 +17,18 @@ import gmail    from "/src/assets/icons/gmail.svg";
 import curriculo from "/src/assets/gifs/curriculo.gif";
 import cerfificado from "/src/assets/gifs/certificate.gif";
 
-export default function App() {
+
+// Tags && GA4
+import { GA_TRACKING_ID, gtag } from "./tags/gatags";
+
+export default function App() 
+{
+    React.useEffect(() => {
+        gtag('js', new Date());
+        gtag('config', GA_TRACKING_ID);
+    }, []);
+
+
     return (
         <div className="div_main">
             <div className="div_perfil">
