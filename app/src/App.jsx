@@ -21,12 +21,32 @@ import cerfificado from "/src/assets/gifs/certificate.gif";
 // Tags && GA4
 import { GA_TRACKING_ID, gtag } from "./tags/gatags";
 
+const trackScroll = () => {
+    const scrollTop = window.scrollY; // Posição atual do scroll
+    const docHeight = document.documentElement.scrollHeight - window.innerHeight; // Altura total rolável
+    const scrollPercent = (scrollTop / docHeight) * 100; // Porcentagem do scroll
+  
+    if (scrollPercent > 25) {
+      gtag("event", "scroll_25", { event_category: "Scroll", event_label: "25%" });
+    }
+    if (scrollPercent > 50) {
+      gtag("event", "scroll_50", { event_category: "Scroll", event_label: "50%" });
+    }
+    if (scrollPercent > 75) {
+      gtag("event", "scroll_75", { event_category: "Scroll", event_label: "75%" });
+    }
+    if (scrollPercent >= 100) {
+      gtag("event", "scroll_100", { event_category: "Scroll", event_label: "100%" });
+    }
+  };
+
+
 export default function App() 
 {
     React.useEffect(() => {
-        gtag('js', new Date());
-        gtag('config', GA_TRACKING_ID);
-    }, []);
+        window.addEventListener("scroll", trackScroll);
+        return () => window.removeEventListener("scroll", trackScroll); // Cleanup ao desmontar
+      }, []);
 
 
     return (
