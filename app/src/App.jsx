@@ -100,8 +100,11 @@ export default function App()
                  </div>
                  <div>
                     <h2>Hard Skills</h2>
-                    <li><b>Analise de Dados:</b> Python, R, SQL, Pyspark, Pandas</li><li><b>Visualização de dados:</b> Power BI, Plotly, Dash, Matplotlib, Seaborn</li><li><b>Front End:</b> HTML, JS, TS, React</li><li><b>Banco de dados:</b> Postgres, SQL server</li>
-                    <li><b>Machine Learning:</b> Keras, Torch, Tensorflow, Stastsmodels, Sklearn</li>
+                    <li><b>Analise de Dados</b>: Python, R, SQL, Pyspark, Pandas, DuckDB.</li>
+                    <li><b>Visualização de dados</b>: Power BI, Plotly, Dash, Matplotlib, Seaborn.</li>
+                    <li><b>Front End</b>: HTML, JS, TS, React JS/Native.</li>
+                    <li><b>Banco de Dados</b>: Postgres, SQL server.</li>
+                    <li><b>Machine Learning</b>: Keras, Torch, Tensorflow, Statsmodels, Scikit-learn, Darts.</li>
                  </div>
                  <div>
                     <h2>Projetos</h2>
@@ -116,7 +119,7 @@ export default function App()
                         </div>
                         <div>
                             <div className="div_projeto">
-                                <a href="https://github.com/kaladabrio2020/MachineLearning" target="_blank" className="a_projeto1">
+                                <a href="https://github.com/kaladabrio2020/ecommerce-brazil-dashboard-bi" target="_blank" className="a_projeto1">
                                     <div className="div_projeto1_text">
                                         <h4>Dashboard Ecommerce</h4>
                                         <p>Criando uma Dashboard Ecommerce Brasil via Dash + Plotly </p>
