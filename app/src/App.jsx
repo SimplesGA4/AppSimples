@@ -96,7 +96,7 @@ export default function App()
             <div className="div_portfolio">
                 <div>
                     <h2>Sobre mim</h2>
-                    <span>Tenho 22 anos e sou estudante de Ciência de Dados na Universidade Federal do Ceará. Meu principal objetivo é adquirir conhecimento e experiência na área, além de contribuir de forma significativa com dedicação e excelência. Tenho grande interesse em Machine Learning, especialmente em Redes Neurais, e estudo intensamente todos os dias para aprimorar meu entendimento e habilidades nesse campo.</span>
+                    <span>Tenho 23 anos e sou estudante de Ciência de Dados na Universidade Federal do Ceará. Meu principal objetivo é adquirir conhecimento e experiência na área, além de contribuir de forma significativa com dedicação e excelência. Tenho grande interesse em Machine Learning, especialmente em Redes Neurais, e estudo intensamente todos os dias para aprimorar meu entendimento e habilidades nesse campo.</span>
                  </div>
                  <div>
                     <h2>Hard Skills</h2>

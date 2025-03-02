@@ -1,88 +1,83 @@
-/* No seu arquivo styles.css */
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap');
-body{
 
+body {
     background-image: url(https://images3.alphacoders.com/648/648465.jpg);
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
     font-family: 'Open Sans', sans-serif;
-}
-/* Para telas menores que 768px (tablets e celulares) */
-@media (max-width: 768px) {
-    body {
-        font-size: 16px;
-    }
+    margin: 0;
+    padding: 0;
 }
 
-/* Para telas menores que 480px (celulares pequenos) */
-@media (max-width: 480px) {
-    body {
-        font-size: 14px;
-    }
-}
-
-.div_main{
+.div_main {
     display: flex;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 10px;
 }
-.div_perfil{
-    background-color: rgba(255, 255, 255, 0.421);
-    width          : 21.1%;
-    height: 540px;
-    padding        : 25px;
-    margin-top     : 50px;
-    margin-left    : 5px;
-    border-radius  : 10px;
-    align-items    : center;
 
+.div_perfil {
+    background-color: rgba(255, 255, 255, 0.421);
+    width: 21.1%;
+    height: 540px;
+    min-height: 400px;
+    padding: 25px;
+    margin-top: 10px;
+    margin-left: 5px;
+    border-radius: 10px;
+    align-items: center;
 }
 
 /* div_perfil_img: foto de perfil */
-.div_perfil_img{
+.div_perfil_img {
     align-items: center;
     justify-content: center;
     display: flex;
 }
+
 /* div_perfil_img_style: foto de perfil estilo*/
-.div_perfil_img_style{
+.div_perfil_img_style {
     border-radius: 300px;
     border-width: 10px;
     border-color: black;
     width: 115px;
+    max-width: 100%;
 }
+
 /* div_perfil_nome: nome do perfil */
-.div_perfil_nome{
+.div_perfil_nome {
     font-family: 'Open Sans';
     font-weight: bold;
-    font-size  : 15pt;
-    text-align : center;
-    margin-top : 15px;
+    font-size: 15pt;
+    text-align: center;
+    margin-top: 15px;
+    word-wrap: break-word;
 }
+
 /* div_perfil_icons_redes: icones */
-.div_perfil_icons_redes{
+.div_perfil_icons_redes {
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-
-.div_perfil_icons_redes img{
+.div_perfil_icons_redes img {
     width: 40px;
     height: 40px;
     margin-left: 10px;
     margin-top: 20px;
 }
 
-
 /* div_perfil_contatos: contatos */
-
-.div_perfil_contatos{
+.div_perfil_contatos {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
 }
-.div_perfil_contatos button{
+
+.div_perfil_contatos button {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -92,93 +87,212 @@ body{
     padding-right: 5px;
     border-radius: 8px;
     border-width: 0.1px;
-    
     border-color: black;
     border-style: solid;
     margin-top: 10px;
+    width: 100%;
+    max-width: 250px;
+    overflow: hidden;
 }
 
-.div_perfil_contatos img{
+.div_perfil_contatos span {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.div_perfil_contatos img {
     width: 22px;
     height: 22px;
     margin-right: 10px;
-
+    flex-shrink: 0;
 }
 
 /* div_perfil_gifs: gifs */
-.div_perfil_gifs{
+.div_perfil_gifs {
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-.div_perfil_gifs span{
+.div_perfil_gifs span {
     font-size: 11pt;
 }
 
-.div_perfil_gifs img{
+.div_perfil_gifs img {
     margin-left: 10px;
     width: 30px;
     height: 30px;
 }
 
-.a_curriculo{
+.a_curriculo {
     text-decoration: none;
     color: black;
 }
-/*div_portfolio: portfolio*/
-.div_portfolio{
-    font-family: 'Open Sans';
 
-    background-color: rgba(255, 255, 255, 0.421);    
+/*div_portfolio: portfolio*/
+.div_portfolio {
+    font-family: 'Open Sans';
+    background-color: rgba(255, 255, 255, 0.421);
     padding: 20px;
-    height: 620px;
+    height: auto;
+    min-height: 620px;
     width: 70%;
-    margin-top: 25px;
+    margin-top: 5px;
     margin-left: 25px;
     border-radius: 10px;
+    overflow-y: auto;
 }
 
-.div_portfolio span{
+.div_portfolio span {
     font-size: 12pt;
-    margin-left: 30px;
+    margin-left: 5px;
     margin-right: 0px;
     text-align: justify;
+    display: block;
 }
 
-.div_projetos_main_1{
+.div_projetos_main_1, .div_projetos_main_2 {
     display: flex;
+    justify-content: flex-start;
+    gap: 15px;
 }
 
-.a_projeto1{
+.div_projetos_main_2 {
+    margin-top: 20px;
+}
+
+.a_projeto1 {
     text-decoration: none;
     color: black;
-}
-.div_projeto{
-    width: 450px;
-    background-color: rgba(189, 189, 189, 0.395);
-    border: 1px solid rgba(0, 0, 0, 0.68);
-    border-radius: 10px;
-    margin-left: 5px;  
+    display: block;
+    height: 100%;
 }
 
-.div_projeto1_text{
+.div_projeto {
+    width: 400px;
+    height: 90px;
+    background-color: rgba(189, 189, 189, 0.395);
+    border: 1px solid rgba(0, 0, 0, 0.68);
+
+    border-radius: 10px;
+    margin-left: 5px;
+    transition: transform 0.2s;
+}
+
+.div_projeto:hover {
+    transform: scale(1.02);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.div_projeto1_text {
     padding: 10px;
     text-align: justify;
 }
-.div_projeto1_text h4{
+
+.div_projeto1_text h4 {
     margin-top: 5px;
     margin-bottom: 5px;
 }
-.div_projeto1_text p{
+
+.div_projeto1_text p {
     margin-top: 5px;
     margin-left: 10px;
     font-size: 10pt;
     font-weight: lighter;
 }
 
+/* Responsividade para desktop menor e tablets grandes */
+@media (max-width: 1200px) {
+    .div_projeto {
+        width: 48%;
+        min-width: 200px;
+    }
+}
 
-.div_projetos_main_2{
-    display: flex;
-    margin-top: 20px;
+/* Responsividade para tablets */
+@media (max-width: 992px) {
+    .div_perfil {
+        width: 30%;
+    }
+    
+    .div_portfolio {
+        width: 65%;
+    }
+}
+
+/* Responsividade para tablets menores */
+@media (max-width: 768px) {
+    body {
+        font-size: 16px;
+    }
+    
+    .div_main {
+        flex-direction: column;
+    }
+    
+    .div_perfil {
+        width: 85%;
+        margin: 20px auto;
+        height: auto;
+    }
+    
+    .div_portfolio {
+        width: 85%;
+        margin: 20px auto;
+    }
+    
+    /* Mantém o layout de 2 projetos por linha em tablets */
+    .div_projetos_main_1, .div_projetos_main_2 {
+        justify-content: space-between;
+    }
+    
+    .div_projeto {
+        width: 48%;
+    }
+}
+
+/* Responsividade para celulares */
+@media (max-width: 576px) {
+    .div_projetos_main_1, .div_projetos_main_2 {
+        flex-direction: column;
+    }
+    
+    .div_projeto {
+        width: 100%;
+        margin: 10px 0;
+    }
+    
+    .div_perfil_nome {
+        font-size: 14pt;
+    }
+    
+    .div_portfolio span {
+        margin-left: 10px;
+    }
+}
+
+/* Responsividade para celulares pequenos */
+@media (max-width: 480px) {
+    body {
+        font-size: 14px;
+    }
+    
+    .div_perfil {
+        width: 90%;
+        padding: 15px;
+    }
+    
+    .div_portfolio {
+        width: 90%;
+        padding: 15px;
+    }
+    
+    .div_perfil_img_style {
+        width: 90px;
+    }
+    
+    .div_perfil_contatos button {
+        font-size: 12px;
+    }
 }
