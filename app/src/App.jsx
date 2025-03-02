@@ -19,21 +19,19 @@ import cerfificado from "/src/assets/gifs/certificate.gif";
 
 
 // Tags && GA4
-import { useAnalytics } from "./tags/gatags";
 
+import ReactGA from "react-ga4";
 
 
 
 export default function App() 
 {
-    const { trackPageView, trackEvent } = useAnalytics();
+  
     React.useEffect(() => {
-        // Rastrear visualização de página inicial
-        trackPageView();        
-        // Também pode rastrear um evento de início de sessão
-        trackEvent('session_start', {
-          timestamp: new Date().toISOString()
-        });
+        ReactGA.initialize('G-NSE4CTFDH2');
+        // page_view 
+        ReactGA.send({ hitType: "pageview", page: "/" });
+
       }, []);
 
 
