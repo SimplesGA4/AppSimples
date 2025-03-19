@@ -13,6 +13,7 @@
     "react-dom": "^19.0.0",
     "react-ga4": "^2.1.0",
     "react-gtm-module": "^2.0.11",
+    "react-router-dom": "^7.4.0",
     "vite-plugin-static-copy": "^2.2.0"
   },
   "devDependencies": {
