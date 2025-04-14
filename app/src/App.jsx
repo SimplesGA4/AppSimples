@@ -41,13 +41,13 @@ export default function App()
 
                 
                 <div className="div_perfil_icons_redes">
-                    <a href="https://www.instagram.com/carmomateussousado/" target="_blank" redesIcons='inta'>
+                    <a href="https://www.instagram.com/carmomateussousado/" target="_blank" redesIcons='insta'>
                         <img src={insta}    alt="insta"/>
                     </a>
-                    <a href="https://www.linkedin.com/in/mateus-sousa-do-carmo-737696268/" target="_blank">
+                    <a href="https://www.linkedin.com/in/mateus-sousa-do-carmo-737696268/" target="_blank" redesIcons='insta'>
                         <img src={linkedin} alt="linkedin"/>
                     </a>
-                    <a href="https://github.com/kaladabrio2020" target="_blank">
+                    <a href="https://github.com/kaladabrio2020" target="_blank" redesIcons='insta'>
                         <img src={github}  alt="linkedin" />    
                     </a>
                 
@@ -70,7 +70,7 @@ export default function App()
                     </button>
                 </div>
                 <hr style={{marginTop:"90px"}}></hr>
-                <a href="https://github.com/kaladabrio2020/kaladabrio2020/blob/main/vitae/Mateus%20Sousa%20do%20Carmo%20-%20vitae.pdf" className="a_curriculo" target="_blank">
+                <a href="https://github.com/kaladabrio2020/kaladabrio2020/blob/main/vitae/Mateus%20Sousa%20do%20Carmo%20-%20vitae.pdf" className="a_curriculo" target="_blank" curriculo='vitae'>
                     <div className="div_perfil_gifs">
                         <span>Currículo Vitae</span>
                         <img src={curriculo} alt="curriculo"/>
