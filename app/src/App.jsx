@@ -26,13 +26,6 @@ import ReactGA from "react-ga4";
 
 export default function App() 
 {
-  
-    React.useEffect(() => {
-        ReactGA.initialize('G-NSE4CTFDH2');
-        // page_view 
-        ReactGA.send({ hitType: "pageview", page: "/" });
-
-      }, []);
 
 
     return (
@@ -48,7 +41,7 @@ export default function App()
 
                 
                 <div className="div_perfil_icons_redes">
-                    <a href="https://www.instagram.com/carmomateussousado/" target="_blank">
+                    <a href="https://www.instagram.com/carmomateussousado/" target="_blank" redesIcons='inta'>
                         <img src={insta}    alt="insta"/>
                     </a>
                     <a href="https://www.linkedin.com/in/mateus-sousa-do-carmo-737696268/" target="_blank">
