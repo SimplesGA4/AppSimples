@@ -41,13 +41,13 @@ export default function App()
 
                 
                 <div className="div_perfil_icons_redes">
-                    <a href="https://www.instagram.com/carmomateussousado/" target="_blank" redesIcons='insta'>
+                    <a href="https://www.instagram.com/carmomateussousado/" target="_blank" redesIcons='iconsRedes'>
                         <img src={insta}    alt="insta"/>
                     </a>
-                    <a href="https://www.linkedin.com/in/mateus-sousa-do-carmo-737696268/" target="_blank" redesIcons='insta'>
+                    <a href="https://www.linkedin.com/in/mateus-sousa-do-carmo-737696268/" target="_blank" redesIcons='iconsRedes'>
                         <img src={linkedin} alt="linkedin"/>
                     </a>
-                    <a href="https://github.com/kaladabrio2020" target="_blank" redesIcons='insta'>
+                    <a href="https://github.com/kaladabrio2020" target="_blank" redesIcons='iconsRedes'>
                         <img src={github}  alt="linkedin" />    
                     </a>
                 
