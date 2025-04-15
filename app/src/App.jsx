@@ -77,7 +77,7 @@ export default function App()
                     </div>
                 </a>
                 <hr></hr>
-                <a href="/certificado" className="a_curriculo" target="_blank">
+                <a href="/home/certificados" className="a_curriculo" target="_blank">
                     <div className="div_perfil_gifs">
                         <span>Certificações</span>
                         <img src={cerfificado} alt="cerfificado"/>
