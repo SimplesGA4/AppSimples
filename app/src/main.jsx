@@ -12,7 +12,7 @@ ReactDOM.createRoot(document.getElementById("root")).render(
         {/* Redireciona a raiz para /home */}
         <Route path="/" element={<Navigate to="/home" replace />} />
         <Route path="/home" element={<App />} />
-        <Route path="/certificado" element={<Certificados />} />
+        <Route path="/home/certificado" element={<Certificados />} />
       </Routes>
     </BrowserRouter>
   </React.StrictMode>
