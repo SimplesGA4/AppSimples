@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 
 import "./styles/App/App.css";
 
@@ -19,15 +19,12 @@ import cerfificado from "/src/assets/gifs/certificate.gif";
 
 
 // Tags && GA4
+//import { pushToDataLayer } from "./utils/gtm";
 
-import ReactGA from "react-ga4";
-
-
+//import { useLocation } from 'react-router-dom';
 
 export default function App() 
 {
-
-
     return (
         <div className="div_main">
             <div className="div_perfil">
@@ -70,6 +67,13 @@ export default function App()
                     </button>
                 </div>
                 <hr style={{marginTop:"90px"}}></hr>
+
+                <a href="/home/animes" className="a_curriculo" curriculo='vitae'>
+                    <div className="div_perfil_gifs">
+                        <span>Review Animes</span>
+                    </div>
+                </a>
+                <hr></hr>
                 <a href="https://github.com/kaladabrio2020/kaladabrio2020/blob/main/vitae/Mateus%20Sousa%20do%20Carmo%20-%20vitae.pdf" className="a_curriculo" target="_blank" curriculo='vitae'>
                     <div className="div_perfil_gifs">
                         <span>Currículo Vitae</span>

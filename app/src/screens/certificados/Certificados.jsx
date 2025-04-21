@@ -1,7 +1,12 @@
-import React from 'react'
+import React, { use, useEffect } from 'react';
 import '@styles/certificados/Certificados.css'
-
+import { pushToDataLayer } from "../../utils/gtm";
 export default function Certificados() {
+    
+    useEffect(() => {
+        pushToDataLayer({ event: "page_view" ,  nome: "Certificados" });
+    },[])
+
     return (
         <div className='divMainCertificados'>
             
