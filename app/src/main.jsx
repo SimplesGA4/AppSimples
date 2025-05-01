@@ -4,7 +4,7 @@ import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
 
 import App           from './App.jsx';
 import Certificados  from './/screens//certificados//Certificados.jsx';
-import Animes        from './/screens//animes//Animes.jsx';
+import Animes        from './/screens//Animes//Animes.jsx';
 
 
 ReactDOM.createRoot(document.getElementById("root")).render(
