@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
-import {marked} from 'marked'
-import '@styles/animes/Animes.css'
+import { marked } from 'marked'
+import '@styles/animes/animes.css'
 
 
 export default function Animes() {
