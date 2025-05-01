@@ -1,6 +1,8 @@
 import React, { use, useEffect } from 'react';
-import '@styles/certificados/Certificados.css'
+import '@styles/Certificados/Certificados.css';
+
 import { pushToDataLayer } from "../../utils/gtm";
+
 export default function Certificados() {
     
     useEffect(() => {
