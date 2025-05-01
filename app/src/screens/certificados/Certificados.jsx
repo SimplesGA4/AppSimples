@@ -1,5 +1,5 @@
 import React, { use, useEffect } from 'react';
-import '@styles/Certificados/certificados.css';
+import '@styles/certificados/Certificados.css';
 
 import { pushToDataLayer } from "../../utils/gtm";
 
