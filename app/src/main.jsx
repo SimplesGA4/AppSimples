@@ -2,9 +2,9 @@ import React from "react";
 import ReactDOM from "react-dom/client";
 import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
 
-import App from "./App";
-import Certificados  from './screens/certificados/certificados.jsx';
-import Animes        from "./screens/animes/animes.jsx";
+import App           from './App.jsx';
+import Certificados  from './screens/Certificados/certificados.jsx';
+import Animes        from './screens/Animes/animes.jsx';
 
 
 ReactDOM.createRoot(document.getElementById("root")).render(
